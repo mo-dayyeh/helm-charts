@@ -35,6 +35,10 @@ dependencies:
   repository: https://grafana.github.io/helm-charts
   version: 5.0.10
   condition: grafana.enabled
+- name: crossplane
+  version: 0.0.1
+  repository: "file://../../../common/helm/common/charts/crossplane"
+  condition: crossplane.enabled
 
 # A chart can be either an 'application' or a 'library' chart.
 #
